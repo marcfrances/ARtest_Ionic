@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+//import { Router } from '@angular/router';
+import { ModalController } from '@ionic/angular'
+import { ARLauncherPage } from '../ar-launcher/ar-launcher.page'
+
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +12,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private modalCtrl: ModalController) {}
+
+  async ARscene() {
+    const modal = await this.modalCtrl.create({
+      component: ARLauncherPage
+    })
+    await modal.present();
+     
+  }
 
 }
+
