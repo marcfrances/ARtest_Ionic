@@ -1,0 +1,7 @@
+{
+  "name": "ARtest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
