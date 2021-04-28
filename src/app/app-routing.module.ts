@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'ar-launcher',
     loadChildren: () => import('./ar-launcher/ar-launcher.module').then( m => m.ArLauncherPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
 ];
 
 @NgModule({
