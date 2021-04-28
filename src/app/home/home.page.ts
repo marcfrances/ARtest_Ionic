@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-//import { Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular'
 import { ARLauncherPage } from '../ar-launcher/ar-launcher.page'
 
@@ -12,7 +12,7 @@ import { ARLauncherPage } from '../ar-launcher/ar-launcher.page'
 })
 export class HomePage {
 
-  constructor(private modalCtrl: ModalController) {}
+  constructor(private modalCtrl: ModalController, private router:Router) {}
 
   async ARscene() {
     const modal = await this.modalCtrl.create({
@@ -20,6 +20,10 @@ export class HomePage {
     })
     await modal.present();
      
+  }
+
+  gotoLogin(){
+    this.router.navigate(['login']);
   }
 
 }
