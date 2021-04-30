@@ -1,14 +1,28 @@
+ion-content{
+    --ion-background-color: #d46a6a;
+}
+
+ion-card{
+    --ion-background-color: #aa3939;
+}
+
+
 #VendorTitel{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
-    color: black;
+    color: white;
 }
 
 #VendorImg{
     height: 150px;
     width: 180px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    border-width: 5px;
+    border-color: #550000;
+    border-style: ridge;
+}
+
+#moreInfoBttn{
+    color: white;
 }
 
 #pinTag{
@@ -19,7 +33,17 @@
 #VendorInfo{
     font-size: 15px;
     font-weight: bold;
+    color: black;
 }
 #mapright{
     margin-right: 100px;
 }
+
+#backgroundColor{
+    background-color: #aa3939;
+}
+
+#cardBackgroundColor{
+    background-color: #aa3939;
+}
+
