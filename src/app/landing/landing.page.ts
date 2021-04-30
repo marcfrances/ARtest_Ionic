@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router'
+import { ModalController } from '@ionic/angular'
+import { ARLauncherPage } from '../ar-launcher/ar-launcher.page'
 
 @Component({
   selector: 'app-landing',
@@ -9,7 +11,7 @@ import {Router} from '@angular/router'
 export class LandingPage implements OnInit {
 
   constructor(
-    private router:Router
+    private modalCtrl: ModalController, private router:Router
   ) {}
 
   ngOnInit() {
@@ -23,4 +25,21 @@ export class LandingPage implements OnInit {
     this.router.navigate(['map'])
   }
 
+  async ARscene() {
+    const modal = await this.modalCtrl.create({
+      component: ARLauncherPage
+    })
+    await modal.present();
+     
+  }
+
+  gotoLogin(){
+    this.router.navigate(['login']);
+  }
+
+  gotoAR(){
+    this.router.navigate(['ar-launcher'])
+  }
+
 }
+
