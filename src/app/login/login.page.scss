@@ -1,0 +1,44 @@
+ion-content{
+    --ion-background-color: #d46a6a;
+}
+
+#spacer {
+    --ion-background-color: #d46a6a;
+}
+
+#loginPage{
+    margin-top: 10%;
+    --ion--color: white;
+    --ion-background-color: #aa3939;
+}
+
+#loginPage ion-text {
+    position: relative;
+    text-align: center;
+}
+
+#loginPage2{
+    --ion-background-color: #ffffff;
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+}
+
+
+#loginPage2 ion-label {
+    //text-align: center;
+}
+
+#loginPage2 ion-card {
+    margin: auto;
+    width: auto;
+}
+
+#loginButton{
+    position: relative;
+    margin: 20% 0;
+}
+
+#greetingText {
+    margin: 0 5%;
+}
