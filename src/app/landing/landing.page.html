@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+  <ion-content>
 
   <ion-tabs>
     <ion-tab-bar id="toolbar" slot="top">
@@ -26,12 +26,12 @@
   </ion-tabs>
   
 <div id="cards">
+
   <ion-card>
     <ion-item>
       <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
-      <ion-button fill="outline" slot="end" (click)="goToVendor()">More Info</ion-button>
+      <ion-button id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
       <img id="VendorImg" slot="start" src="assets/vendor1.jpg">
-      
     </ion-item>
   
     <ion-card-content id="VendorInfo">
@@ -42,43 +42,43 @@
       Rating: 
     </ion-card-content>
   </ion-card>
-
+  
   <ion-card>
     <ion-item>
       <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
-      <ion-button fill="outline" slot="end" (click)="goToVendor()">More Info</ion-button>
+      <ion-button id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
       <img id="VendorImg" slot="start" src="assets/vendor2.jpg">
-      
     </ion-item>
   
     <ion-card-content id="VendorInfo">
-      <ion-label id="VendorTitel">Richeeze</ion-label>
+      <ion-label id="VendorTitel">Richeeze's</ion-label>
       <br>
       Location: 
       Hours:
       Rating: 
     </ion-card-content>
   </ion-card>
-
+  
   <ion-card>
     <ion-item>
       <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
-      <ion-button fill="outline" slot="end" (click)="goToVendor()">More Info</ion-button>
+      <ion-button id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
       <img id="VendorImg" slot="start" src="assets/vendor3.jpg">
     </ion-item>
   
     <ion-card-content id="VendorInfo">
-      <ion-label id="VendorTitel">Nathans</ion-label>
+      <ion-label id="VendorTitel">Nathans's</ion-label>
       <br>
       Location: 
       Hours:
       Rating: 
     </ion-card-content>
   </ion-card>
+  
   <ion-card>
     <ion-item>
       <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
-      <ion-button fill="outline" slot="end" (click)="goToVendor()">More Info</ion-button>
+      <ion-button id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
       <img id="VendorImg" slot="start" src="assets/vendor4.jpg">
     </ion-item>
   
@@ -90,11 +90,10 @@
       Rating: 
     </ion-card-content>
   </ion-card>
+
 </div>
   
 
 
 
 
-  
-</ion-content>
