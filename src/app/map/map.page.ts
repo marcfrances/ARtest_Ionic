@@ -9,9 +9,9 @@ export class MapPage implements OnInit {
 
   slidersOpts ={
     zoom: {
-      maxRatio:2
+      maxRatio:4
     }
-  }
+  };
 
   constructor() { }
 
