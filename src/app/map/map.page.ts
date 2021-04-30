@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapPage implements OnInit {
 
+  slidersOpts ={
+    zoom: {
+      maxRatio:2
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {
