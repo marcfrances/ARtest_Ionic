@@ -19,4 +19,8 @@ export class LandingPage implements OnInit {
     this.router.navigate(['vendor'])
   }
 
+  goToMap(){
+    this.router.navigate(['map'])
+  }
+
 }
