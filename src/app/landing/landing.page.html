@@ -8,6 +8,24 @@
 
 <ion-content>
 
+  <ion-tabs>
+    <ion-tab-bar id="toolbar" slot="top">
+      <ion-tab-button tab="home">
+        <ion-label>Home</ion-label>
+        <ion-icon name="home"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="settings">
+        <ion-label>Settings</ion-label>
+        <ion-icon name="settings"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="ar-launcher" (click)="gotoAR()">
+        <ion-label>AR Scene</ion-label>
+        <ion-icon name="camera"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  
+<div id="cards">
   <ion-card>
     <ion-item>
       <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
@@ -72,6 +90,8 @@
       Rating: 
     </ion-card-content>
   </ion-card>
+</div>
+  
 
 
 
