@@ -15,8 +15,4 @@ export class ARLauncherPage implements OnInit {
 
   }
 
-  close(){
-    this.modalCtrl.dismiss();
-  }
-
 }

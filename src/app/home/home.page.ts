@@ -26,5 +26,9 @@ export class HomePage {
     this.router.navigate(['login']);
   }
 
+  gotoAR(){
+    this.router.navigate(['ar-launcher'])
+  }
+
 }
 

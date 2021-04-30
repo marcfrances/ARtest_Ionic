@@ -1,4 +1,3 @@
-<ion-app>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
@@ -12,12 +11,9 @@
   <div id="container">
   
   <ion-tabs>
-    <ion-tab tab="home">
-      <ion-button>Log in</ion-button>
-    </ion-tab>
-    <ion-tab tab="settings">
-      <ion-button (click)="gotoLogin()">Sign Up</ion-button>
-    </ion-tab>
+
+    <ion-button expand="block" color="primary">Log In</ion-button>
+    <ion-button expand="block" color="primary" (click)="gotoLogin()">Sign Up</ion-button>
 
     <ion-tab-bar slot="top">
       <ion-tab-button tab="home">
@@ -28,16 +24,21 @@
         <ion-label>Settings</ion-label>
         <ion-icon name="settings"></ion-icon>
       </ion-tab-button>
+      <ion-tab-button tab="ar-launcher" (click)="gotoAR()">
+        <ion-label>AR Scene</ion-label>
+        <ion-icon name="settings"></ion-icon>
+      </ion-tab-button>
       
     </ion-tab-bar>
   </ion-tabs>
   <img id="munchieLogo" src="assets/munchiecar.png">
-  
+  <!--
     <ion-buttons>
       <ion-button id="ARButton" color="primary" (click)="ARscene()">Go to AR view </ion-button>
     </ion-buttons>
+  -->
+    
   </div>
 
   </ion-content>
 
-</ion-app>
