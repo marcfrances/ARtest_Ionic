@@ -1,11 +1,17 @@
-#container {
-  text-align: center;
+ion-content{
+  --ion-background-color: #d46a6a;
+}
 
-  position: static;
-  left: 0;
-  right: 0;
-  top: 0%;
-  transform: translateY(0%);
+#container {
+  --ion-background-color: #aa3939;
+  text-align: center;
+  margin: auto;
+  padding-top: 30%;
+  
+}
+
+#container ion-card {
+  
 }
 
 #container strong {
@@ -26,13 +32,24 @@
   text-decoration: none;
 }
 
+#container2 {
+  margin-top: 40%;
+  --ion-background-color: white;
+}
+
 #ARButton {
   width: auto;
   height: auto;
 }
 
 #munchieLogo {
-  margin-bottom: 20% ;
+  
+  margin: 5% ;
   width: 50%;
   height: auto;
+}
+
+#loginButton{
+  position: relative;
+  margin: 10% 0;
 }
