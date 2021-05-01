@@ -21,8 +21,13 @@
     "@angular/router": "~11.2.0",
     "@capacitor/core": "2.4.7",
     "@ionic-native/geolocation": "^5.32.1",
+    "@ionic-native/google-nearby": "^5.32.1",
+    "@ionic-native/navigation-bar": "^5.32.1",
+    "@ionic-native/qr-scanner": "^5.32.1",
     "@ionic/angular": "^5.5.2",
     "cordova-plugin-geolocation": "^4.1.0",
+    "cordova-plugin-navigationbar": "^1.0.31",
+    "cordova-plugin-qrscanner": "^3.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

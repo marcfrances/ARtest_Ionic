@@ -5,13 +5,14 @@ ion-content{
 #container {
   --ion-background-color: #aa3939;
   text-align: center;
-  margin: auto;
-  padding-top: 30%;
+  margin: 5vw;
+  padding-top: 5%;
   
 }
 
 #container ion-card {
-  
+  width:auto;
+  height: 200vh;
 }
 
 #container strong {
@@ -49,7 +50,12 @@ ion-content{
   height: auto;
 }
 
+#munchieText {
+  color: #FFFFFF;
+}
+
 #loginButton{
   position: relative;
   margin: 10% 0;
+  
 }

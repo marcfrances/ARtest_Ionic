@@ -33,13 +33,16 @@ export class LandingPage implements OnInit {
      
   }
 
+  goToHome() {
+    this.router.navigate(['home']);
+  }
+
   gotoLogin(){
     this.router.navigate(['login']);
   }
 
   gotoAR(){
-    this.router.navigate(['ar-launcher'])
+    this.router.navigate(['ar-launcher']);
   }
 
 }
-
