@@ -16,7 +16,7 @@ export class LandingPage implements OnInit {
 
   ngOnInit() {
   }
-
+ 
   goToVendor(){
     this.router.navigate(['vendor'])
   }
