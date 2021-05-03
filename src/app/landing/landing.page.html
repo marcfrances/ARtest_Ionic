@@ -1,99 +1,101 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Spotlight
-      <ion-button color="warning" (click)="goToMap()">Map</ion-button>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-  <ion-content>
+<ion-content>
 
   <ion-tabs>
     <ion-tab-bar id="toolbar" slot="top">
       <ion-tab-button tab="home" (click)="goToHome()">
-        <ion-label>Home</ion-label>
-        <ion-icon name="home"></ion-icon>
+        <ion-label color="dark">Home</ion-label>
+        <ion-icon color="dark" name="home"></ion-icon>
       </ion-tab-button>
       <ion-tab-button tab="settings">
-        <ion-label>Settings</ion-label>
-        <ion-icon name="settings"></ion-icon>
+        <ion-label color="dark">Settings</ion-label>
+        <ion-icon color="dark" name="settings"></ion-icon>
       </ion-tab-button>
-      <ion-tab-button  (click)="gotoAR()">
-        <ion-label>AR Scene</ion-label>
-        <ion-icon name="camera"></ion-icon>
+      <ion-tab-button (click)="gotoAR()">
+        <ion-label color="dark">AR Scene</ion-label>
+        <ion-icon color="dark" name="camera"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button (click)="goToMap()">
+        <ion-label color="dark">Map</ion-label>
+        <ion-icon color="dark" name="map"></ion-icon>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
-  
-<div id="cards">
 
-  <ion-card>
-    <ion-item>
-      <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
-      <ion-button color="warning" id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
-      <img id="VendorImg" slot="start" src="assets/vendor1.jpg">
-    </ion-item>
-  
-    <ion-card-content id="VendorInfo">
-      <ion-label id="VendorTitel">Downtown Fingers</ion-label>
-      <br><div id="text">
-      Location: <br>
-      Hours:  <br>
-      Rating: </div>
-    </ion-card-content>
-  </ion-card>
-  
-  <ion-card>
-    <ion-item>
-      <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
-      <ion-button color="warning" id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
-      <img id="VendorImg" slot="start" src="assets/vendor2.jpg">
-    </ion-item>
-  
-    <ion-card-content id="VendorInfo">
-      <ion-label id="VendorTitel">Richeeze's</ion-label>
-      <br><div id="text">
-        Location: <br>
-        Hours: <br>
-        Rating: </div>
-    </ion-card-content>
-  </ion-card>
-  
-  <ion-card>
-    <ion-item>
-      <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
-      <ion-button color="warning" id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
-      <img id="VendorImg" slot="start" src="assets/vendor3.jpg">
-    </ion-item>
-  
-    <ion-card-content id="VendorInfo">
-      <ion-label id="VendorTitel">Nathans's</ion-label>
-      <br><div id="text">
-        Location: <br>
-        Hours: <br>
-        Rating: </div>
-    </ion-card-content>
-  </ion-card>
-  
-  <ion-card>
-    <ion-item>
-      <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
-      <ion-button color="warning" id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
-      <img id="VendorImg" slot="start" src="assets/vendor4.jpg">
-    </ion-item>
-  
-    <ion-card-content id="VendorInfo">
-      <ion-label id="VendorTitel">Charlotte's</ion-label>
-      <br><div id="text">
-        Location: <br>
-        Hours: <br>
-        Rating: </div>
-    </ion-card-content>
-  </ion-card>
+  <div id="cards">
 
-</div>
-  
+    <ion-card>
+      <ion-item>
+        <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
+        <ion-button color="warning" id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
+        <img id="VendorImg" slot="start" src="assets/vendor1.jpg">
+      </ion-item>
 
+      <ion-card-content id="VendorInfo">
+        <ion-label id="VendorTitel">Downtown Fingers</ion-label>
+        <br>
+        <div id="text">
+          Location: 9th St. Boise <br>
+          Hours: 12:00pm - 8:00pm <br>
+          Rating: ★★★★ </div>
+      </ion-card-content>
+    </ion-card>
 
+    <ion-card>
+      <ion-item>
+        <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
+        <ion-button color="warning" id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
+        <img id="VendorImg" slot="start" src="assets/vendor2.jpg">
+      </ion-item>
 
+      <ion-card-content id="VendorInfo">
+        <ion-label id="VendorTitel">Richeeze's</ion-label>
+        <br>
+        <div id="text">
+          Location: 9th St. Boise <br>
+          Hours: 12:00pm - 8:00pm <br>
+          Rating: ★★★★ </div>
+      </ion-card-content>
+    </ion-card>
 
+    <ion-card>
+      <ion-item>
+        <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
+        <ion-button color="warning" id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
+        <img id="VendorImg" slot="start" src="assets/vendor3.jpg">
+      </ion-item>
+
+      <ion-card-content id="VendorInfo">
+        <ion-label id="VendorTitel">Nathans's</ion-label>
+        <br>
+        <div id="text">
+          Location: 9th St. Boise <br>
+          Hours: 12:00pm - 8:00pm <br>
+          Rating: ★★★★ </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-icon id="pinTag" name="pin" slot="start" (click)="goToMap()"></ion-icon>
+        <ion-button color="warning" id="moreInfoBttn" (click)="goToVendor()">More Info</ion-button>
+        <img id="VendorImg" slot="start" src="assets/vendor4.jpg">
+      </ion-item>
+
+      <ion-card-content id="VendorInfo">
+        <ion-label id="VendorTitel">Charlotte's</ion-label>
+        <br>
+        <div id="text">
+          Location: 9th St. Boise <br>
+          Hours: 12:00pm - 8:00pm <br>
+          Rating: ★★★★ </div>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
