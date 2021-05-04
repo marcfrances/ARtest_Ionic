@@ -5,12 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './map.page.html',
   styleUrls: ['./map.page.scss'],
 })
-
 export class MapPage implements OnInit {
 
-  slidersOpts ={
+  slidersOpts = { 
     zoom: {
-      maxRatio:4
+      maxRatio:2
     }
   };
 
